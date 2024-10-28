@@ -1,0 +1,13 @@
+.podium {
+  text-align: center;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+}

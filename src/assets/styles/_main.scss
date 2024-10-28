@@ -1,0 +1,30 @@
+@use "sass:color";
+@use "variables" as vars;
+@forward "shared";
+
+.welcome {
+  @extend %flex-ccc;
+  height: 100dvh;
+
+  &__title {
+    font-size: vars.$title-size;
+    margin-bottom: 2rem;
+  }
+
+  &__cta {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: vars.$color-primary;
+    color: vars.$color-text-secondary;
+    padding: 0.5rem 1rem;
+    border: 1px solid vars.$color-primary;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: color.adjust(vars.$color-primary, $lightness: -10%);
+      border-color: color.adjust(vars.$color-primary, $lightness: -10%);
+    }
+  }
+}

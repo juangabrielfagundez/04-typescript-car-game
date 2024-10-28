@@ -1,0 +1,8 @@
+@use "variables" as vars;
+
+body {
+  font-family: vars.$font-family;
+  color: vars.$color-text;
+  line-height: 1.6;
+  background-color: vars.$color-secondary;
+}

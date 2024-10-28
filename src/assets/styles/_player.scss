@@ -1,0 +1,50 @@
+@forward "shared";
+@use "variables" as var;
+
+.player {
+  height: 100dvh;
+  gap: 1rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 1rem;
+  @extend %flex-ccc;
+
+  &__nickname {
+    padding: 0.75rem 1rem;
+    width: 350px;
+    border: 1px solid var.$color-secondary;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  &__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .carousel__button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .carousel__image {
+    height: 200px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+}
+
+
